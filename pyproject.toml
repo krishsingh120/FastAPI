@@ -1,0 +1,15 @@
+[project]
+name = "fastapi-server"
+version = "0.1.0"
+description = "Basic FastAPI server"
+readme = "README.md"
+authors = [
+    { name = "Krish Singh", email = "154358180+krishsingh120@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.141.1",
+    "pymongo>=4.17.0",
+    "uvicorn>=0.52.4",
+]
+
