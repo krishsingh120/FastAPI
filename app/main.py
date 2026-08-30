@@ -1,14 +1,11 @@
 from fastapi import FastAPI
+from app.core.config import settings
 
-app = FastAPI(title="User API")
+app = FastAPI(title=settings.app_name)
 
 @app.get("/health")
 def health():
-  print("OK")
-  return {"status": "ok"}
-
-@app.get("/")
-def root():
-    return {"message": "Hello from FastAPI"}
-
-
+    return {
+        "status": "ok",
+        "app": settings.app_name
+    }
